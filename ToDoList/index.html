@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Definición del tipo de documento y configuración de caracteres y viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Enlace al archivo de estilos externo -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Título de la página -->
+    <title>To-Do List</title>
+</head>
+<body>
+    <!-- Contenedor principal de la aplicación -->
+    <div class="container">
+        <!-- Encabezado principal de la aplicación -->
+        <h1>To-Do List</h1>
+
+        <!-- Cuadro de entrada para nuevas tareas -->
+        <input type="text" id="taskInput" placeholder="Nueva tarea">
+
+        <!-- Botón para agregar nuevas tareas -->
+        <button onclick="addTask()">Agregar</button>
+
+        <!-- Contenedor para la lista de tareas --> 
+        <div id="taskList" class="task-list"></div>
+    </div>
+
+    <!-- Enlace al archivo de scripts externo -->
+    <script src="script.js"></script>
+</body>
+</html>

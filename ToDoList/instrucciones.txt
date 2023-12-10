@@ -1,0 +1,60 @@
+Inicio y Estructura HTML:
+
+La página comienza con la definición del tipo de documento (<!DOCTYPE html>) y la estructura básica de HTML.
+Se enlaza con un archivo de estilo externo (style.css) y un archivo de script externo (script.js).
+Contiene un contenedor principal (container) con un encabezado (h1), un cuadro de entrada (input), un botón de agregar 
+(button), y un contenedor de lista de tareas (taskList).
+
+
+Estilos CSS:
+
+Define estilos para el cuerpo de la página, el contenedor principal, el encabezado, el cuadro de entrada, los botones 
+y la lista de tareas.
+Establece colores, márgenes, sombras y otros estilos para lograr una apariencia moderna y limpia.
+
+
+Script JavaScript:
+
+Inicia una variable taskId para asignar identificadores únicos a las tareas.
+addTask() agrega una nueva tarea al hacer clic en el botón de agregar.
+Crea un nuevo elemento div para representar la tarea.
+Le asigna un ID único.
+Contiene un cuadro de entrada de texto y botones de editar y eliminar.
+editTask(id) permite la edición directa de una tarea al hacer clic en el botón de editar.
+removeTask(id) elimina una tarea al hacer clic en el botón de eliminar.
+
+
+En resumen, el programa permite al usuario agregar, editar y eliminar tareas de una lista, con un diseño agradable y
+funcionalidades básicas de CRUD (Crear, Leer, Actualizar, Eliminar).
+
+
+JavaScript - Funciones
+
+1. **`addTask()`:**
+   - **Función:** Agrega una nueva tarea a la lista.
+   - **Pasos:**
+     - Obtiene el valor del cuadro de entrada de texto y el contenedor de la lista de tareas.
+     - Verifica que el cuadro de entrada no esté vacío.
+     - Crea un nuevo elemento `div` para representar la tarea.
+     - Agrega la clase "task" al div.
+     - Configura el contenido del div con un cuadro de entrada de texto, y botones de editar y eliminar.
+     - Asigna un ID único al div.
+     - Agrega la tarea al contenedor de la lista.
+     - Limpia el cuadro de entrada.
+     - Incrementa el identificador único para la próxima tarea.
+
+2. **`editTask(id)`:**
+   - **Función:** Permite la edición directa de una tarea seleccionada.
+   - **Pasos:**
+     - Obtiene el cuadro de entrada de texto, la tarea seleccionada y el cuadro de entrada principal.
+     - Activa o desactiva el modo de solo lectura del cuadro de entrada de texto dentro de la tarea.
+     - Si el cuadro de entrada de texto está en modo solo lectura, lo activa, establece el foco en él y refleja su contenido en el cuadro de entrada principal.
+     - Si el cuadro de entrada de texto no está en modo solo lectura, lo desactiva y actualiza el cuadro de entrada principal con su contenido.
+
+3. **`removeTask(id)`:**
+   - **Función:** Elimina una tarea.
+   - **Pasos:**
+     - Obtiene la tarea mediante su ID.
+     - Elimina la tarea del DOM (Documento Object Model), es decir, del contenedor de la lista.
+
+Estas funciones proporcionan la funcionalidad básica para agregar, editar y eliminar tareas en la lista de tareas de la aplicación To-Do List.

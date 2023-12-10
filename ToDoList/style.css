@@ -1,0 +1,104 @@
+body {
+    /* Establece la fuente predeterminada y otros estilos generales para el cuerpo del documento */
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f5f5;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ajusta la altura al 100% de la altura de la ventana */
+}
+
+.container {
+    /* Estilos para el contenedor principal de la aplicación */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    /* Estilos para el encabezado principal de la aplicación */
+    color: #3498db; /* Color azul */
+}
+
+input[type="text"] {
+    /* Estilos para el cuadro de entrada de texto */
+    padding: 8px;
+    margin: 10px 0;
+    width: 60%;
+    border: 1px solid #3498db;
+    border-radius: 4px;
+}
+
+button {
+    /* Estilos para los botones */
+    padding: 8px 16px;
+    background-color: #3498db; /* Color de fondo azul */
+    color: #ffffff; /* Color del texto blanco */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    /* Estilos para el estado hover (cuando el mouse pasa sobre el botón) */
+    background-color: #2980b9; /* Color de fondo azul más oscuro */
+}
+
+.task-list {
+    /* Estilos para el contenedor de la lista de tareas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task {
+    /* Estilos para cada tarea en la lista */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    width: 60%;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+.task:hover {
+    /* Estilos para el estado hover de una tarea */
+    background-color: #ecf0f1; /* Color de fondo gris claro */
+}
+
+.task input {
+    /* Estilos para el cuadro de entrada de texto dentro de una tarea */
+    border: none;
+    margin-right: 8px;
+    flex: 1;    
+}
+
+.task button {
+    /* Estilos para los botones dentro de una tarea */
+    margin-right: 4px; /* Espaciado derecho entre botones */
+}
+
+ul {
+    /* Estilos generales para listas desordenadas */
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    /* Estilos para elementos de lista (li) */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ecf0f1; /* Borde inferior gris claro */
+}
+
+li:last-child {
+    /* Estilos para el último elemento de la lista (sin borde inferior) */
+    border-bottom: none;
+}
+
